@@ -11,14 +11,14 @@ public class Loop {
 		int c;
 		System.out.println(a);
 		System.out.println(b);
-		for(int i=0;i<=10;i++) {
-			
+		for(int i=0;i<=10;i++) {			
 			c=a+b;
 			System.out.println(c);
 			a=b;
 			b=c;
 	}
 }
+	//Comment 
 	public void primeNumber() {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the number");
