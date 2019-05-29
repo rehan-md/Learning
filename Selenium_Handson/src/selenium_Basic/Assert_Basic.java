@@ -28,6 +28,7 @@ public class Assert_Basic {
 		Thread.sleep(10);
 		driver.quit();
 		sAssert.assertAll();
+		
 	}
 	
 }
