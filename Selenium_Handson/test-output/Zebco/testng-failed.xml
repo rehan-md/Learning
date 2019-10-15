@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Zebco]">
+  <test thread-count="5" name="Zebco_Login(failed)">
+    <parameter name="password" value="Password1"/>
+    <parameter name="abc" value="abc"/>
+    <parameter name="emailId" value="rehan.md@cognizant.com"/>
+    <parameter name="url" value="https://www.zebco.com"/>
+    <classes>
+      <class name="testNG_Basic.ParameterTest">
+        <methods>
+          <include name="zebcoLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNG_Basic.ParameterTest -->
+    </classes>
+  </test> <!-- Zebco_Login(failed) -->
+</suite> <!-- Failed suite [Zebco] -->

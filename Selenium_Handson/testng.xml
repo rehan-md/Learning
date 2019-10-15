@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Zebco">
+  <test thread-count="5" name="Zebco_Login">
+  
+  <parameter name="url" value="https://www.zebco.com"/>
+  <parameter name="emailId" value="rehan.md@cognizant.com"/>
+  <parameter name="password" value="Password1"/>
+  <parameter name="abc" value="abc"/>
+    <classes>
+      <class name="testNG_Basic.ParameterTest"/>
+    </classes>
+  </test> 
+</suite>

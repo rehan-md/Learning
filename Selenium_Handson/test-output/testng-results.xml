@@ -2,22 +2,42 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39847" started-at="2019-05-27T16:20:58Z" finished-at="2019-05-27T16:21:38Z">
+  <suite name="Default suite" duration-ms="19690" started-at="2019-09-07T02:48:34Z" finished-at="2019-09-07T02:48:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39847" started-at="2019-05-27T16:20:58Z" finished-at="2019-05-27T16:21:38Z">
+    <test name="Default test" duration-ms="19690" started-at="2019-09-07T02:48:34Z" finished-at="2019-09-07T02:48:53Z">
       <class name="selenium_Basic.Assert_Basic">
-        <test-method status="FAIL" signature="test1()[pri:0, instance:selenium_Basic.Assert_Basic@6d00a15d]" name="test1" duration-ms="39812" started-at="2019-05-27T16:20:58Z" finished-at="2019-05-27T16:21:38Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="test1()[pri:0, instance:selenium_Basic.Assert_Basic@6d00a15d]" name="test1" duration-ms="19656" started-at="2019-09-07T02:48:34Z" finished-at="2019-09-07T02:48:53Z">
+          <exception class="org.openqa.selenium.JavascriptException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [Google1] but found [Google]]]>
+              <![CDATA[javascript error: document.getElementByClassName is not a function
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-O5P2B5H', ip: '192.168.43.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\MDREHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ce6081d7a3fec5ec40ce11125cbee7b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [Google1] but found [Google]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at selenium_Basic.Assert_Basic.test1(Assert_Basic.java:30)
+              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: document.getElementByClassName is not a function
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-O5P2B5H', ip: '192.168.43.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\MDREHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ce6081d7a3fec5ec40ce11125cbee7b
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+at selenium_Basic.Assert_Basic.test1(Assert_Basic.java:34)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -45,7 +65,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->

@@ -15,12 +15,12 @@ public class Grid_Test {
 		
 		DesiredCapabilities cap=new DesiredCapabilities();
 		cap.setBrowserName("chrome");
-		cap.setPlatform(Platform.WINDOWS);
+		cap.setPlatform(Platform.WIN10);
 		
 		ChromeOptions options=new ChromeOptions();
 		options.merge(cap);
 		
-		String hubUrl="http://192.168.43.66:4444/wd/hub";
+		String hubUrl="http://192.168.43.66:5566/wd/hub";
 		WebDriver driver=new RemoteWebDriver(new URL(hubUrl),options);
 		
 		driver.get("https://www.zebco.com/");
