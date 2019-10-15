@@ -36,7 +36,7 @@ public class Broken_Links {
 		try {
 			URL url=new URL(linkUrl);
 			HttpURLConnection urlConnect=(HttpURLConnection)url.openConnection();
-			urlConnect.setConnectTimeout(5000);
+			urlConnect.setConnectTimeout(10000);
 			urlConnect.connect();
 			if(urlConnect.getResponseCode()==200) {
 				System.out.println(linkUrl+" - "+urlConnect.getResponseMessage());
